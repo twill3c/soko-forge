@@ -21,6 +21,8 @@ export interface GenerateOptions {
   /** 逆再生の引き回数(大きいほど初期配置が完成形から遠くなる) */
   readonly pulls: number;
   readonly seed: number;
+  /** 採用する解の最短押し数の下限(既定 max(2, floor(pulls / 4)))。未満は自明として棄却(F-10) */
+  readonly minPushes?: number;
   /** 棄却時の再試行上限(既定 50) */
   readonly maxAttempts?: number;
   /** ソルバー予算(既定 DEFAULT_BUDGET) */
@@ -52,6 +54,7 @@ const DIR_LIST: readonly Dir[] = ["up", "down", "left", "right"];
 export function generateLevel(opts: GenerateOptions): GenerateResult {
   const maxAttempts = opts.maxAttempts ?? 50;
   const budget = opts.budget ?? DEFAULT_BUDGET;
+  const minPushes = opts.minPushes ?? Math.max(2, Math.floor(opts.pulls / 4));
 
   for (let attempt = 1; attempt <= maxAttempts; attempt++) {
     // 試行ごとに独立した決定的ストリーム(失敗混じりでも再現可能)
@@ -61,7 +64,7 @@ export function generateLevel(opts: GenerateOptions): GenerateResult {
 
     const solved = solve(level, { budget });
     if (solved.status !== "solved") continue;
-    if ((solved.pushes ?? 0) < 1) continue; // 自明解は棄却(F-10)
+    if ((solved.pushes ?? 0) < minPushes) continue; // 下限未満は自明として棄却(F-10)
 
     return {
       ok: true,

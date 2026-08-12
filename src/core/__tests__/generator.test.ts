@@ -55,6 +55,29 @@ describe("T-142 生成器信頼性(N-05)", () => {
   });
 });
 
+describe("T-145 既定 minPushes(F-10)", () => {
+  it("代表パラメータ(pulls=12 → 既定 minPushes=3)で全生成レベルの押し数 ≥ 3", () => {
+    for (let seed = 1; seed <= 10; seed++) {
+      const g = generateLevel({ ...REP, seed });
+      expect(g.ok, `seed=${seed} で生成失敗`).toBe(true);
+      if (!g.ok) continue;
+      // 既定 minPushes = max(2, floor(12 / 4)) = 3
+      expect(g.result.pushes, `seed=${seed}`).toBeGreaterThanOrEqual(3);
+    }
+  });
+});
+
+describe("T-146 明示指定 minPushes(F-10)", () => {
+  it("minPushes=5 を指定すると押し数 5 未満の解は採用されない", () => {
+    for (const seed of [1, 2, 3]) {
+      const g = generateLevel({ ...REP, seed, minPushes: 5 });
+      expect(g.ok, `seed=${seed} で生成失敗`).toBe(true);
+      if (!g.ok) continue;
+      expect(g.result.pushes, `seed=${seed}`).toBeGreaterThanOrEqual(5);
+    }
+  });
+});
+
 describe("T-143 難易度の単調性", () => {
   it("他条件同一で押し数が増えるとスコアは下がらない", () => {
     let prev = 0;
