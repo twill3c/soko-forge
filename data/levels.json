@@ -51,16 +51,6 @@
       "difficulty": 1
     },
     {
-      "id": "G08",
-      "name": "鍛造 VIII",
-      "source": "generated",
-      "seed": 108,
-      "text": "##########\n##       #\n#@* *    #\n#$     $.#\n#.    #  #\n#     # ##\n#     # ##\n##########",
-      "pushes": 2,
-      "moves": 7,
-      "difficulty": 2
-    },
-    {
       "id": "G05",
       "name": "鍛造 V",
       "source": "generated",
@@ -111,14 +101,24 @@
       "difficulty": 3
     },
     {
+      "id": "G08",
+      "name": "鍛造 VIII",
+      "source": "generated",
+      "seed": 108,
+      "text": "##########\n# # ## *+#\n# # #  *$#\n# #   #  #\n#   #    #\n# $#   # #\n# .    # #\n##########",
+      "pushes": 6,
+      "moves": 28,
+      "difficulty": 3
+    },
+    {
       "id": "G09",
       "name": "鍛造 IX",
       "source": "generated",
       "seed": 109,
-      "text": "###########\n#  #      #\n#       *@#\n#    $ .  #\n#    .# $ #\n##    .   #\n#       $ #\n#   #     #\n###########",
-      "pushes": 6,
-      "moves": 27,
-      "difficulty": 3
+      "text": "###########\n#  #   #  #\n# # #  .  #\n#         #\n# #  .$ $##\n#.     #@ #\n# $   $ # #\n#   .   # #\n###########",
+      "pushes": 9,
+      "moves": 29,
+      "difficulty": 4
     }
   ]
 }
