@@ -8,3 +8,6 @@
 {"v": "1.2", "ts": "2026-08-13T05:42:35+09:00", "project": "soko-forge", "loop_id": "loop_008", "event": "stage_end", "data": {"stage": 4, "stage_name": "実装", "result": "pass", "note": "Footer.tsx + layout 組込み + CSS"}}
 {"v": "1.2", "ts": "2026-08-13T05:42:35+09:00", "project": "soko-forge", "loop_id": "loop_008", "event": "stage_end", "data": {"stage": 5, "stage_name": "検証", "result": "pass", "note": "verify PASS(42 テスト)"}}
 {"v": "1.2", "ts": "2026-08-13T05:42:36+09:00", "project": "soko-forge", "loop_id": "loop_008", "event": "stage_end", "data": {"stage": 6, "stage_name": "文書同期", "result": "pass", "note": "SPEC F-16 / TEST_SPEC T-160 は本ループ冒頭で改訂済み。README 変更不要"}}
+{"v": "1.2", "ts": "2026-08-13T05:42:36+09:00", "project": "soko-forge", "loop_id": "loop_008", "event": "commit", "data": {"sha": "a17c34c", "kind": "feat", "message": "ライセンス表示フッター F-16"}}
+{"v": "1.2", "ts": "2026-08-13T05:42:37+09:00", "project": "soko-forge", "loop_id": "loop_008", "event": "stage_end", "data": {"stage": 7, "stage_name": "完了", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-13T05:42:37+09:00", "project": "soko-forge", "loop_id": "loop_008", "event": "loop_end", "data": {"outcome": "success", "failure_count": 0, "summary": "F-16 完了: フッターで MIT オープンソースを明示、T-160 green、verify PASS、失敗 0 件"}}
