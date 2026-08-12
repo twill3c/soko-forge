@@ -1,0 +1,30 @@
+:root {
+  --bg: #14161d;
+  --panel: #1e2130;
+  --panel-2: #262a3d;
+  --text: #e8e9f0;
+  --muted: #9aa0b5;
+  --accent: #e8a33d;
+  --accent-2: #4fc1a6;
+  --danger: #e0604f;
+  --wall: #3a3f57;
+  --floor: #20243480;
+  --goal: #4fc1a6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", "Hiragino Sans", "Noto Sans JP", sans-serif;
+}
+
+a {
+  color: var(--accent);
+}
