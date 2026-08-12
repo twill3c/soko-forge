@@ -28,3 +28,267 @@ body {
 a {
   color: var(--accent);
 }
+
+/* ---- レイアウト ---- */
+
+.app {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+header h1 {
+  margin: 0;
+  color: var(--accent);
+  letter-spacing: 0.04em;
+}
+
+.tagline {
+  color: var(--muted);
+  margin-top: 0.25rem;
+}
+
+.columns {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.panel {
+  background: var(--panel);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+aside.panel {
+  flex: 0 0 300px;
+}
+
+main.play {
+  flex: 1 1 480px;
+  min-width: 320px;
+}
+
+.panel h2 {
+  font-size: 1rem;
+  margin: 0 0 0.5rem;
+  color: var(--muted);
+}
+
+/* ---- レベル選択 ---- */
+
+.level-list {
+  list-style: none;
+  margin: 0 0 1.25rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+button.level {
+  width: 100%;
+  text-align: left;
+  background: var(--panel-2);
+  color: var(--text);
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+button.level.active {
+  border-color: var(--accent);
+}
+
+.level-name {
+  font-weight: 600;
+}
+
+.level-meta {
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+/* ---- 生成フォーム ---- */
+
+.gen-form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.gen-form label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.gen-form input {
+  width: 6.5em;
+  background: var(--panel-2);
+  color: var(--text);
+  border: 1px solid #3a3f57;
+  border-radius: 4px;
+  padding: 4px 6px;
+}
+
+.gen-info {
+  font-size: 0.8rem;
+  color: var(--accent-2);
+}
+
+/* ---- 盤面 ---- */
+
+.board {
+  --cell: clamp(24px, 4.2vw, 40px);
+  display: grid;
+  gap: 0;
+  width: fit-content;
+  margin: 0.75rem auto;
+}
+
+.cell {
+  width: var(--cell);
+  height: var(--cell);
+  position: relative;
+}
+
+.cell.wall {
+  background: var(--wall);
+  border-radius: 3px;
+  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.3);
+}
+
+.cell.floor {
+  background: var(--floor);
+}
+
+.cell.dead {
+  background: rgba(224, 96, 79, 0.28);
+}
+
+.goal-dot {
+  position: absolute;
+  inset: 35%;
+  border: 2px solid var(--goal);
+  border-radius: 50%;
+}
+
+.box {
+  position: absolute;
+  inset: 12%;
+  background: var(--accent);
+  border-radius: 4px;
+  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.35);
+}
+
+.box.on-goal {
+  background: var(--accent-2);
+}
+
+.player {
+  position: absolute;
+  inset: 18%;
+  background: #7aa2f7;
+  border-radius: 50%;
+  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* ---- プレイ画面 ---- */
+
+.play-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.play-head h2 {
+  color: var(--text);
+}
+
+.counters {
+  display: flex;
+  gap: 0.9rem;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.controls {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.controls button,
+button.primary {
+  background: var(--panel-2);
+  color: var(--text);
+  border: 1px solid #3a3f57;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+button.primary {
+  background: var(--accent);
+  color: #1a1405;
+  border-color: var(--accent);
+  font-weight: 700;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.clear-banner {
+  background: rgba(79, 193, 166, 0.15);
+  border: 1px solid var(--accent-2);
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.solve-info {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+}
+
+.lurd {
+  display: block;
+  word-break: break-all;
+  background: var(--panel-2);
+  border-radius: 6px;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  color: var(--accent-2);
+  font-size: 0.8rem;
+}
+
+.error {
+  color: var(--danger);
+}
+
+.help {
+  color: var(--muted);
+  font-size: 0.82rem;
+  margin-top: 1rem;
+  line-height: 1.7;
+}
+
