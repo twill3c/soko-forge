@@ -65,3 +65,4 @@
 | T-150 | F-15 | 内蔵全レベルがパース可能 | エラーなし |
 | T-151 | F-15, N-04 | 内蔵全レベルがソルバーで solved(既定予算内) | solved |
 | T-090 | N-01 | src/core 内に react/next/dom/Date.now/Math.random の参照がない | 静的検査 pass |
+| T-160 | F-16 | Footer を静的レンダリング | 「MIT License」・著作権者表記・GitHub リポジトリ URL・LICENSE リンクを含む |
