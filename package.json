@@ -12,6 +12,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
+    "gen:levels": "vite-node scripts/gen-levels.ts",
     "verify": "node scripts/verify.mjs",
     "verify:fast": "node scripts/verify.mjs --fast"
   },

@@ -1,0 +1,124 @@
+{
+  "levels": [
+    {
+      "id": "H01",
+      "name": "はじめの一歩",
+      "source": "handcrafted",
+      "seed": null,
+      "text": "######\n#@$ .#\n######",
+      "pushes": 2,
+      "moves": 2,
+      "difficulty": 1
+    },
+    {
+      "id": "G01",
+      "name": "鍛造 I",
+      "source": "generated",
+      "seed": 101,
+      "text": "#######\n#     #\n##  # #\n#  ## #\n#@$ . #\n#######",
+      "pushes": 2,
+      "moves": 2,
+      "difficulty": 1
+    },
+    {
+      "id": "H02",
+      "name": "ふたつの部屋",
+      "source": "handcrafted",
+      "seed": null,
+      "text": "########\n#  .   #\n# $@$  #\n#   .  #\n########",
+      "pushes": 3,
+      "moves": 15,
+      "difficulty": 1
+    },
+    {
+      "id": "G02",
+      "name": "鍛造 II",
+      "source": "generated",
+      "seed": 102,
+      "text": "########\n##  *#+#\n# #   $#\n##   # #\n#      #\n########",
+      "pushes": 3,
+      "moves": 9,
+      "difficulty": 1
+    },
+    {
+      "id": "G03",
+      "name": "鍛造 III",
+      "source": "generated",
+      "seed": 103,
+      "text": "########\n#  # #.#\n#    # #\n#  # .$#\n#  ##$@#\n#     ##\n########",
+      "pushes": 3,
+      "moves": 15,
+      "difficulty": 1
+    },
+    {
+      "id": "G08",
+      "name": "鍛造 VIII",
+      "source": "generated",
+      "seed": 108,
+      "text": "##########\n##       #\n#@* *    #\n#$     $.#\n#.    #  #\n#     # ##\n#     # ##\n##########",
+      "pushes": 2,
+      "moves": 7,
+      "difficulty": 2
+    },
+    {
+      "id": "G05",
+      "name": "鍛造 V",
+      "source": "generated",
+      "seed": 105,
+      "text": "#########\n#@$ .   #\n##    $ #\n#  #  . #\n##      #\n#      *#\n#########",
+      "pushes": 3,
+      "moves": 8,
+      "difficulty": 2
+    },
+    {
+      "id": "H03",
+      "name": "まわり道",
+      "source": "handcrafted",
+      "seed": null,
+      "text": "#######\n#.  # #\n# $@$ #\n#   . #\n#######",
+      "pushes": 5,
+      "moves": 23,
+      "difficulty": 2
+    },
+    {
+      "id": "G07",
+      "name": "鍛造 VII",
+      "source": "generated",
+      "seed": 107,
+      "text": "##########\n# *  #   #\n#  ## ##.#\n## #  # $#\n###@$    #\n## ## # .#\n# #      #\n##########",
+      "pushes": 6,
+      "moves": 23,
+      "difficulty": 2
+    },
+    {
+      "id": "G04",
+      "name": "鍛造 IV",
+      "source": "generated",
+      "seed": 104,
+      "text": "########\n##   # #\n# $# . #\n#@$   ##\n#     ##\n#.#   ##\n########",
+      "pushes": 8,
+      "moves": 25,
+      "difficulty": 2
+    },
+    {
+      "id": "G06",
+      "name": "鍛造 VI",
+      "source": "generated",
+      "seed": 106,
+      "text": "#########\n##   .# #\n#  #@$  #\n#   $ # #\n##    . #\n##      #\n## #. $ #\n#########",
+      "pushes": 6,
+      "moves": 23,
+      "difficulty": 3
+    },
+    {
+      "id": "G09",
+      "name": "鍛造 IX",
+      "source": "generated",
+      "seed": 109,
+      "text": "###########\n#  #      #\n#       *@#\n#    $ .  #\n#    .# $ #\n##    .   #\n#       $ #\n#   #     #\n###########",
+      "pushes": 6,
+      "moves": 27,
+      "difficulty": 3
+    }
+  ]
+}
