@@ -27,6 +27,11 @@
 | 5 検証 | `npm run verify`(build 込み)を green にする。ゲートコマンドはパイプを通さず素で実行し exit code で判定する |
 | 7 完了 | `looplog.py validate` 合格 + `summary` を完了報告に含める |
 
+looplog 記録の規範(HC-001):
+
+- 新しいイベント種別を初めて使う前に `harness/looplog.py` の EVENT_SPECS(必須フィールドと型)を確認する。推測で引数を組み立てない。
+- `test_run` の passed / failed は**直前のテスト出力の数値をそのまま転記**する。記憶で書かない。
+
 ## 3. 品質ゲート(完了条件)
 
 `npm run verify` が green であること。内訳:
