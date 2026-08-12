@@ -20,3 +20,17 @@
 | 効果検証 | 以後 5 ループで TOOL-MISUSE 再発 0 件なら Closed |
 | propagation | soko-forge ✅(他プロジェクトは還流判断待ち) |
 | 状態 | Verifying |
+
+## HC-002
+
+| 項目 | 内容 |
+|---|---|
+| 起票日 | 2026-08-13 |
+| トリガー | `TOOL-ENV` S2 × 1(loop_007)— デプロイ阻害のため個別起票 |
+| 診断 | scaffold web-static プロファイルの vercel.json が `web/` サブディレクトリ前提で、ルート直下 Next.js の本プロジェクトでは Vercel ビルド不成立。managed file のため直接編集はドリフトになる |
+| 改訂 | エスカレーション → 人間承認(2026-08-13): 正規経路でレジストリ改訂。harness-kit HC-011 / registry v1.8.0(vercel_json・check_links を project-owned へ再分類、scaffoldctl SC-06d 撤去掃除)。本プロジェクトは update 適用後、vercel.json / web/ を撤去(ルート構成では不要 — command-type 前例) |
+| 種別 | tooling(fleet 還流 — harness-kit HC-011 参照) |
+| SCAFFOLD_VERSION | 1.7.1 → 1.8.0 |
+| 効果検証 | Vercel 本番公開の成功をもって Closed |
+| propagation | soko-forge ✅ / 他プロジェクトは次回 update で自動掃除(HC-011 管理) |
+| 状態 | Verifying |
