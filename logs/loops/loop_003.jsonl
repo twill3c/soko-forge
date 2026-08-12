@@ -7,3 +7,6 @@
 {"v": "1.2", "ts": "2026-08-13T04:43:22+09:00", "project": "soko-forge", "loop_id": "loop_003", "event": "stage_end", "data": {"stage": 4, "stage_name": "実装", "result": "pass", "note": "solver.ts(push-BFS+正規化+デッドマス+予算)一発 green"}}
 {"v": "1.2", "ts": "2026-08-13T04:43:22+09:00", "project": "soko-forge", "loop_id": "loop_003", "event": "stage_end", "data": {"stage": 5, "stage_name": "検証", "result": "pass", "note": "verify PASS。T-101 は下限の独立再計算で最適性を検算"}}
 {"v": "1.2", "ts": "2026-08-13T04:43:22+09:00", "project": "soko-forge", "loop_id": "loop_003", "event": "stage_end", "data": {"stage": 6, "stage_name": "文書同期", "result": "pass", "note": "デッドマス検出は pull 到達性で実装(SPEC の記述例を包含)— SPEC §2.2 F-07 と整合"}}
+{"v": "1.2", "ts": "2026-08-13T04:44:11+09:00", "project": "soko-forge", "loop_id": "loop_003", "event": "commit", "data": {"sha": "509cfae", "kind": "feat", "message": "ソルバー F-06..F-08"}}
+{"v": "1.2", "ts": "2026-08-13T04:44:11+09:00", "project": "soko-forge", "loop_id": "loop_003", "event": "stage_end", "data": {"stage": 7, "stage_name": "完了", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-13T04:44:12+09:00", "project": "soko-forge", "loop_id": "loop_003", "event": "loop_end", "data": {"outcome": "success", "failure_count": 0, "summary": "ソルバー完了: T-100..T-120 全 green(最適性は下限一致で検算)、verify PASS、失敗 0 件"}}
