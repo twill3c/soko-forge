@@ -11,3 +11,8 @@
 {"v": "1.2", "ts": "2026-08-13T05:02:36+09:00", "project": "soko-forge", "loop_id": "loop_005", "event": "stage_end", "data": {"stage": 4, "stage_name": "実装", "result": "pass", "note": "gen-levels スクリプト・levels.json 12 面・App/BoardView UI"}}
 {"v": "1.2", "ts": "2026-08-13T05:02:36+09:00", "project": "soko-forge", "loop_id": "loop_005", "event": "stage_end", "data": {"stage": 5, "stage_name": "検証", "result": "pass", "note": "verify PASS。内蔵レベルは T-151 が独立に solve して検証"}}
 {"v": "1.2", "ts": "2026-08-13T05:02:36+09:00", "project": "soko-forge", "loop_id": "loop_005", "event": "stage_end", "data": {"stage": 6, "stage_name": "文書同期", "result": "pass", "note": "README 追加、HC-001 起票と AGENTS.md §2 への規範追記"}}
+{"v": "1.2", "ts": "2026-08-13T05:03:00+09:00", "project": "soko-forge", "loop_id": "loop_005", "event": "commit", "data": {"sha": "b74a0bc", "kind": "data", "message": "内蔵レベル 12 面 F-15"}}
+{"v": "1.2", "ts": "2026-08-13T05:03:01+09:00", "project": "soko-forge", "loop_id": "loop_005", "event": "commit", "data": {"sha": "5528741", "kind": "feat", "message": "UI F-12..F-14"}}
+{"v": "1.2", "ts": "2026-08-13T05:03:01+09:00", "project": "soko-forge", "loop_id": "loop_005", "event": "commit", "data": {"sha": "109a848", "kind": "docs", "message": "README + HC-001"}}
+{"v": "1.2", "ts": "2026-08-13T05:03:01+09:00", "project": "soko-forge", "loop_id": "loop_005", "event": "stage_end", "data": {"stage": 7, "stage_name": "完了", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-13T05:03:01+09:00", "project": "soko-forge", "loop_id": "loop_005", "event": "loop_end", "data": {"outcome": "success", "failure_count": 1, "summary": "内蔵レベル 12 面 + UI 完了。verify PASS。失敗 1 件(TOOL-MISUSE S3 → ツーストライクで HC-001 起票・AGENTS.md 改良)"}}
