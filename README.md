@@ -1,5 +1,7 @@
 # soko-forge
 
+**本番: https://soko-forge.vercel.app**(GitHub 連携 Vercel、main への push で自動デプロイ)
+
 倉庫番(Sokoban)を「遊ぶ・解く・作る」ブラウザアプリ。
 ハーネスエンジニアリング / ループエンジニアリングの実践課題として、
 スペック駆動 + テスト先行 + ループ可観測性(loop-observability)で開発されている。

@@ -15,3 +15,6 @@ next-env.d.ts
 
 # worktree baseline(worktree ごとのローカル状態)
 .wt-baseline.json
+
+.vercel
+.env*
