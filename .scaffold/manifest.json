@@ -1,5 +1,5 @@
 {
-  "scaffold_version": "1.7.1",
+  "scaffold_version": "1.8.0",
   "registry_hint": "c:/_ClaudeCode/harness-kit/scaffold-kit/registry",
   "components": [
     {
@@ -70,22 +70,6 @@
       "target": ".wt/gate.json",
       "source": "templates/gate.json.tmpl",
       "installed_version": "1.7.1"
-    },
-    {
-      "type": "file",
-      "id": "vercel_json",
-      "target": "vercel.json",
-      "source": "files/vercel.json",
-      "installed_version": "1.7.1",
-      "installed_sha256": "3902daae5ca30540055f78ca89db2b35b178e79e0e15e27ae5ab31343d4432c8"
-    },
-    {
-      "type": "file",
-      "id": "check_links",
-      "target": "web/scripts/check-links.mjs",
-      "source": "files/web/scripts/check-links.mjs",
-      "installed_version": "1.7.1",
-      "installed_sha256": "e01a08092e8f4cf909f23c68ae3d7d3865a2170ffed133b3bb402e599c20f606"
     }
   ],
   "profiles": [
