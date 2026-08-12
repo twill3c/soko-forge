@@ -292,3 +292,18 @@ button:disabled {
   line-height: 1.7;
 }
 
+/* ---- ライセンス表示フッター(F-16) ---- */
+
+.site-footer {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 1rem 1rem 2rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.site-footer a {
+  color: var(--accent-2);
+}
+
