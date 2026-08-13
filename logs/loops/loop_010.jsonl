@@ -1,0 +1,11 @@
+{"v": "1.2", "ts": "2026-08-14T06:33:46+09:00", "project": "soko-forge", "loop_id": "loop_010", "event": "loop_start", "data": {"goal": "フッタに解説アーティファクト(遊ぶ・解く・作るのしくみ/soko-forge アーキテクチャ)へのリンクを追加(GitHub と App Menu の間)", "spec_refs": ["F-16"], "scaffold_version": "1.8.0", "agent": "claude-fable-5"}}
+{"v": "1.2", "ts": "2026-08-14T06:33:46+09:00", "project": "soko-forge", "loop_id": "loop_010", "event": "stage_end", "data": {"stage": 1, "stage_name": "計画", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-14T06:33:47+09:00", "project": "soko-forge", "loop_id": "loop_010", "event": "stage_end", "data": {"stage": 2, "stage_name": "文脈読込", "result": "pass", "notes": "Footer.tsx(F-16)・footer.test.tsx・既存アーティファクト 2 件の URL とタイトルを確認"}}
+{"v": "1.2", "ts": "2026-08-14T06:33:47+09:00", "project": "soko-forge", "loop_id": "loop_010", "event": "stage_end", "data": {"stage": 3, "stage_name": "テスト先行", "result": "skip", "notes": "リンク 2 件の追加。既存表明は維持されテスト対象の挙動変化なし"}}
+{"v": "1.2", "ts": "2026-08-14T06:35:49+09:00", "project": "soko-forge", "loop_id": "loop_010", "event": "test_run", "data": {"command": "npm run verify + npx vitest run", "passed": 41, "failed": 0}}
+{"v": "1.2", "ts": "2026-08-14T06:35:49+09:00", "project": "soko-forge", "loop_id": "loop_010", "event": "stage_end", "data": {"stage": 4, "stage_name": "実装", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-14T06:36:55+09:00", "project": "soko-forge", "loop_id": "loop_010", "event": "commit", "data": {"sha": "dacf7c5", "kind": "feat"}}
+{"v": "1.2", "ts": "2026-08-14T06:36:56+09:00", "project": "soko-forge", "loop_id": "loop_010", "event": "stage_end", "data": {"stage": 5, "stage_name": "検証", "result": "pass", "notes": "verify green(41 件 pass)+ 本番 soko-forge.vercel.app で両リンクの表示を確認"}}
+{"v": "1.2", "ts": "2026-08-14T06:36:56+09:00", "project": "soko-forge", "loop_id": "loop_010", "event": "stage_end", "data": {"stage": 6, "stage_name": "文書同期", "result": "skip", "notes": "SPEC/README に該当記述なし"}}
+{"v": "1.2", "ts": "2026-08-14T06:36:56+09:00", "project": "soko-forge", "loop_id": "loop_010", "event": "stage_end", "data": {"stage": 7, "stage_name": "完了", "result": "pass"}}
+{"v": "1.2", "ts": "2026-08-14T06:36:56+09:00", "project": "soko-forge", "loop_id": "loop_010", "event": "loop_end", "data": {"outcome": "success", "failure_count": 0, "summary": "フッタに解説アーティファクト 2 件へのリンクを追加し本番反映。verify green、失敗 0 件"}}
