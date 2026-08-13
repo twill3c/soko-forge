@@ -1,4 +1,4 @@
-// T-160: ライセンス表示(F-16)— Footer が MIT オープンソースであることを明示する
+// T-160: ライセンス表示(F-16)— Footer がフリート統一書式で MIT オープンソースであることを明示する
 import { renderToStaticMarkup } from "react-dom/server";
 import { describe, expect, it } from "vitest";
 import { Footer, REPO_URL } from "../Footer";
@@ -6,12 +6,10 @@ import { Footer, REPO_URL } from "../Footer";
 describe("T-160 ライセンス表示", () => {
   const html = () => renderToStaticMarkup(<Footer />);
 
-  it("「MIT License」を含む", () => {
-    expect(html()).toContain("MIT License");
-  });
-
-  it("著作権者表記が LICENSE と同一", () => {
-    expect(html()).toContain("坂田哲朗 (Tetsuro Sakata)");
+  it("統一書式「MIT License © 2026 坂田哲朗 ・ GitHub」で表示する", () => {
+    const text = html().replace(/<[^>]+>/g, "");
+    expect(text).toContain("MIT License");
+    expect(text).toContain("© 2026 坂田哲朗 ・ GitHub");
   });
 
   it("GitHub リポジトリと LICENSE 本文へのリンクを含む", () => {

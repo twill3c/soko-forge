@@ -5,13 +5,12 @@ export function Footer() {
   return (
     <footer className="site-footer">
       <p>
-        soko-forge はオープンソースソフトウェアです —{" "}
         <a href={`${REPO_URL}/blob/main/LICENSE`} target="_blank" rel="noreferrer">
           MIT License
         </a>{" "}
-        © 2026 坂田哲朗 (Tetsuro Sakata) ・{" "}
+        © 2026 坂田哲朗 ・{" "}
         <a href={REPO_URL} target="_blank" rel="noreferrer">
-          GitHub でソースを見る
+          GitHub
         </a>
       </p>
     </footer>
