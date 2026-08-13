@@ -11,6 +11,10 @@ export function Footer() {
         © 2026 坂田哲朗 ・{" "}
         <a href={REPO_URL} target="_blank" rel="noreferrer">
           GitHub
+        </a>{" "}
+        ・{" "}
+        <a href="https://app-menu-amber.vercel.app" target="_blank" rel="noopener">
+          App Menu
         </a>
       </p>
     </footer>
